@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h3>فهرست محصولات</h3>
+       
+    </header>
+    <section class="main-section">
+       
+        <!-- modal -->
+        <div class="modal-container ">
+            <div class="modal">
+                <form action="" data-id="" class="modal-form">
+                    <div class="modal-title">ویرایش محصول</div>
+                    <label for="modal-product-title">نام محصول</label>
+                    <input type="text" name="modal-product-title" id="modal-product-title">
+                    <label for="modal-product-quantity">تعداد محصول</label>
+                    <input type="number" name="modal-product-quantity" id="modal-product-quantity">
+                    <label for="modal-product-category">گروه</label>
+                    <select name="modal-product-category" id="modal-product-category">
+                </select>
+                    <button class="add-edited-product">تکمیل ویرایش</button>
+            </div>
+        </div>
+        <!-- forms -->
+        <div class="form-container ">
+            <!-- category form -->
+            <h3 class="toggle-form">فرم ایجاد گروه جدید</h3>
+            <div class="category-form hidden">
+                <div class="form-title">
+                    <h2>ایجاد گروه جدید</h2>
+                </div>
+                <div class="form">
+                    <form action="" class="form">
+                        <label for="category-title">گروه</label>
+                        <input type="text" name="category-title" id="category-title">
+                        <label for="category-description">توضیحات</label>
+                        <textarea name="category-description" id="category-description"></textarea>
+                        <div class="btn-container">
+                            <button class="btn cancel-btn">کنسل</button>
+                            <button class="btn add-category-btn">افزودن</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- product form -->
+            <div class="product-form">
+                <div class="form-title">
+                    <h2>ایجاد محصول جدید</h2>
+                </div>
+                <form action="">
+                    <label for="product-title">نام محصول</label>
+                    <input type="text" name="product-title" id="product-title">
+                    <label for="product-quantity">تعداد محصول</label>
+                    <input type="number" name="product-quantity" id="product-quantity">
+                    <label for="product-category">گروه</label>
+                    <select name="product-category" id="product-category">
+                        <!-- <option value="" selected>یک گروه انتخاب کنید</option>
+                        <option value="">مواد غذایی</option>
+                        <option value="">نوشیدنی</option> -->
+                    </select>
+                    <button class="add-product-btn">افزودن</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="product-container">
+            <div class="search-sort-container">
+                <input type="search" name="search-product" id="search-product" placeholder="جستجو...">
+                <select name="sort-product" id="sort-product">
+        <option value="newest" selected>جدیدترین</option>
+        <option value="oldest">قدیمی ترین</option>
+    </select>
+            </div>
+            <!-- product list -->
+            <div class="product-list">
+                <!-- <div class="product">
+                    <h3>برنج</h3>
+                    <div class="product-desc">
+                        <span class="product-date">1401/4/3</span>
+                        <span class="product-list-quantity">3</span>
+                        <span class="product-list-category">نوشیدنی</span>
+                        <button class="delete-product-btn">حذف</button>
+                        <button class="edit-product-btn">ادیت</button>
+                    </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
